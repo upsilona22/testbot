@@ -9,7 +9,7 @@ let highscores;
 
 // holds discord IDs of authorized moderators
 //const mods = require("./moderators.json");
-const modRoleID = '431269016322048001';
+const modRoleID = '775654181167562752';
 
 const fetch = require('isomorphic-fetch');
 const Dropbox = require('dropbox').Dropbox;
@@ -61,7 +61,7 @@ client.on("messageCreate", async message => {
             ],
         };
 
-        const updateCommand = await client.guilds.cache.get('343166009286459402')?.commands.create(update);
+        const updateCommand = await client.guilds.cache.get('1067800797758369812')?.commands.create(update);
 
         const authorize = {
             name: 'authorize',
@@ -96,7 +96,7 @@ client.on("messageCreate", async message => {
             ],
         };
 
-        const authorizeCommand = await client.guilds.cache.get('343166009286459402')?.commands.create(authorize);
+        const authorizeCommand = await client.guilds.cache.get('1067800797758369812')?.commands.create(authorize);
 
         const name = {
             name: 'name',
@@ -117,7 +117,7 @@ client.on("messageCreate", async message => {
             ],
         };
 
-        const nameCommand = await client.guilds.cache.get('343166009286459402')?.commands.create(name);
+        const nameCommand = await client.guilds.cache.get('1067800797758369812')?.commands.create(name);
 
         const country = {
             name: 'country',
@@ -132,7 +132,7 @@ client.on("messageCreate", async message => {
             ],
         };
 
-        const countryCommand = await client.guilds.cache.get('343166009286459402')?.commands.create(country);
+        const countryCommand = await client.guilds.cache.get('1067800797758369812')?.commands.create(country);
 
         const override = {
             name: 'override',
@@ -159,7 +159,7 @@ client.on("messageCreate", async message => {
             ],
         };
 
-        const overrideCommand = await client.guilds.cache.get('343166009286459402')?.commands.create(override);
+        const overrideCommand = await client.guilds.cache.get('1067800797758369812')?.commands.create(override);
 
         const remove = {
             name: 'remove',
@@ -174,7 +174,7 @@ client.on("messageCreate", async message => {
             ],
         };
 
-        const removeCommand = await client.guilds.cache.get('343166009286459402')?.commands.create(remove);
+        const removeCommand = await client.guilds.cache.get('1067800797758369812')?.commands.create(remove);
 
         const setUserCountry = {
             name: 'setusercountry',
@@ -195,7 +195,7 @@ client.on("messageCreate", async message => {
             ],
         };
 
-        const setUserCountryCommand = await client.guilds.cache.get('343166009286459402')?.commands.create(setUserCountry);
+        const setUserCountryCommand = await client.guilds.cache.get('1067800797758369812')?.commands.create(setUserCountry);
 
         console.log("Deployed slash commands");
         message.react("✅");
