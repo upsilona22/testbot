@@ -13,7 +13,7 @@ const modRoleID = '431269016322048001';
 
 const fetch = require('isomorphic-fetch');
 const Dropbox = require('dropbox').Dropbox;
-let dbx = new Dropbox({accessToken: config.dropToken, fetch: fetch});
+let dbx = new Dropbox({accessToken: process.env.token, fetch: fetch});
 let failedDownload = false;
 
 // On startup downloads files from Dropbox to keep continuity across sessions
@@ -22,7 +22,7 @@ client.on("ready", () => {
 });
 
 // Logs into Discord
-client.login(config.discordToken).catch(function (err) {
+client.login(process.env.TOKEN).catch(function (err) {
     console.log(err);
 });
 
